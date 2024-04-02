@@ -31,3 +31,11 @@ a {
   justify-content: center;
   align-items: center;
 }
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.title_box {
+  color: black;
+}
