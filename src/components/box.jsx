@@ -9,6 +9,7 @@ export default function BoxSx({ children }) {
         height: "50vh",
         borderRadius: 1,
         bgcolor: "whitesmoke",
+        overflow: "scroll",
       }}
     >
       {children}

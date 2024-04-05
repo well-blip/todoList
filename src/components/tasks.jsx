@@ -20,6 +20,7 @@ export default function Task({ task }) {
           backgroundColor: "#caef8c",
           borderRadius: "30px",
           padding: "10px",
+          margin: "20px",
         }}
       >
         <FormControlLabel
