@@ -17,7 +17,7 @@ export default function Task({ task }) {
     <div>
       <Box
         sx={{
-          backgroundColor: "#caef8c",
+          backgroundColor: "grey",
           borderRadius: "30px",
           padding: "10px",
           margin: "20px",

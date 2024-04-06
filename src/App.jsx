@@ -4,10 +4,19 @@ import { TextField, Typography } from "@mui/material";
 import Task from "./components/tasks";
 import Fab from "@mui/material/Fab";
 import AddIcon from "@mui/icons-material/Add";
+import { useState } from "react";
+import Modal from "./components/modal";
+import CustomModal from "./components/modal";
 
 function App() {
-  const tasks = ["Build Application", "Take a Walk", "Eat Food"];
-
+  const tasks = ["Build Application"];
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const handleOpenModal = () => {
+    setIsModalOpen(true);
+  };
+  const handleModalClose = () => {
+    setIsModalOpen(false);
+  };
   return (
     <div>
       <div className="title_container">
@@ -29,13 +38,15 @@ function App() {
             backgroundColor: "#276673",
             color: "whitesmoke",
             position: "relative",
-            top: "150px",
+            top: "130px",
             right: "80px",
           }}
+          onClick={handleOpenModal}
         >
           <AddIcon />
         </Fab>
       </div>
+      <CustomModal open={isModalOpen} onClose={handleModalClose} />
     </div>
   );
 }
